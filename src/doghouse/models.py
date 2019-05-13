@@ -16,7 +16,7 @@ class Pets(models.Model):
         (DOG, 'Cachorro'),
         (CAT, 'Gato')
     )
-    especie = models.CharField(max_length=1, choices=ESPECIE_CHOICES, default=CACHORRO)
+    especie = models.CharField(max_length=1, choices=ESPECIE_CHOICES, default=DOG)
 
     PEQ = 'Pq'
     MED = 'Md'
