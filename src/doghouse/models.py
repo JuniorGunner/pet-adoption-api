@@ -10,11 +10,11 @@ class Pets(models.Model):
     #pet_id = models.OneToOneField('self', on_delete=models.CASCADE, primary_key=True)
     pet_foto = models.ImageField(upload_to=get_image_path, blank=True, null=True)
 
-    CACHORRO = 'C'
-    GATO = 'G'
+    DOG = 'C'
+    CAT = 'G'
     ESPECIE_CHOICES = (
-        (CACHORRO, 'C'),
-        (GATO, 'G')
+        (DOG, 'Cachorro'),
+        (CAT, 'Gato')
     )
     especie = models.CharField(max_length=1, choices=ESPECIE_CHOICES, default=CACHORRO)
 
