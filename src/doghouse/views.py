@@ -42,7 +42,7 @@ class PetsDetailView(generics.RetrieveUpdateDestroyAPIView):
     def get(self, request, *args, **kwargs):
         try:
             a_pet = self.queryset.get(pk=kwargs["pk"])
-            return Response(ProfilesSerializer(a_pet).data)
+            return Response(PetsSerializer(a_pet).data)
         except Pets.DoesNotExist:
             return Response(
                 data={
@@ -56,7 +56,7 @@ class PetsDetailView(generics.RetrieveUpdateDestroyAPIView):
             a_pet = self.queryset.get(pk=kwargs["pk"])
             serializer = PetsSerializer()
             updated_pet = serializer.update(a_pet, request.data)
-            return Response(ProfilesSerializer(updated_pet).data)
+            return Response(PetsSerializer(updated_pet).data)
         except Pets.DoesNotExist:
             return Response(
                 data={

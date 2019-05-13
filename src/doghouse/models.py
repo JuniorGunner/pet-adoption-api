@@ -6,8 +6,6 @@ def get_image_path(instance, filename):
 
 # Create your models here.
 class Pets(models.Model):
-    pet_id = models.ForeignKey('self', models.SET_NULL, blank=True, null=True, unique=True)
-    #pet_id = models.OneToOneField('self', on_delete=models.CASCADE, primary_key=True)
     pet_foto = models.ImageField(upload_to=get_image_path, blank=True, null=True)
 
     DOG = 'C'
