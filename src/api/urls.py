@@ -18,5 +18,5 @@ from django.urls import path, include, re_path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('doghouse.urls'))
+    re_path('api/(?P<version>(v1))/', include('doghouse.urls'))
 ]
