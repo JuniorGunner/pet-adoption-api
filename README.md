@@ -13,6 +13,20 @@ O desenvolvedor deve construir o backend que suporte a operação da ONG.
 * Instalar dependências:   
 `$ pip install -r requirements.txt`   
 
-* Rodar aplicação:   
+* Criar usuário administrador:   
 `$ cd src`   
+`$ python manage.py createsuperuser --email admin@example.com --username admin`   
+
+* Rodar aplicação:   
 `$ python -m manage.py runserver`   
+
+### Testar   
+
+* Para a interface admin, digitar no navegador:   
+`127.0.0.1:8000/admin/`   
+
+* Para a API (lista todos pets - GET, POST):   
+`127.0.0.1:8000/api/v1/pets`   
+
+* Ou para listar um pet específico (PUT, DELETE):   
+`127.0.0.1:8000/api/v1/pets/<id>`

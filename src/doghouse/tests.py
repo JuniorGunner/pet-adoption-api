@@ -11,7 +11,7 @@ class BaseViewTest(APITestCase):
     client = APIClient()
 
     @staticmethod
-    def create_pet(pet_foto=None, especie="", porte="", nome="", idade="", raca="", obs=""):
+    def create_pet(pet_foto="", especie="", porte="", nome="", idade="", raca="", obs=""):
         Pets.objects.create(pet_foto=pet_foto, especie=especie, porte=porte, nome=nome, idade=idade, raca=raca, obs=obs)
 
     def make_a_request(self, kind="post", **kwargs):
@@ -65,15 +65,15 @@ class BaseViewTest(APITestCase):
 
     def setUp(self):
         # add test data
-        self.create_pet(None, 'C', 'Gd', "Rex", 'A', "Vira-lata", "Cão adulto super dócil")
-        self.create_pet(None, 'G', 'Pq', "Salem", 'F', "Vira-lata", "Filhote não vacinado")
-        self.create_pet(None, 'C', 'Md', "Toby", 'F', "Vira-lata", "Filhote vacinado - 40 dias de vida")
+        self.create_pet("01", 'C', 'Gd', "Rex", 'A', "Vira-lata", "Cão adulto super dócil")
+        self.create_pet("02", 'G', 'Pq', "Salem", 'F', "Vira-lata", "Filhote não vacinado")
+        self.create_pet("03", 'C', 'Md', "Toby", 'F', "Vira-lata", "Filhote vacinado - 40 dias de vida")
 
         self.valid_pet_id = 1
         self.invalid_pet_id = 100
 
         self.valid_data = {
-            "pet_foto": None,
+            "pet_foto": "04",
             "especie": "C",
             "porte": "Md",
             "nome": "Pet Test",
