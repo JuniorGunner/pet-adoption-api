@@ -32,4 +32,7 @@ O desenvolvedor deve construir o backend que suporte a operação da ONG.
 `127.0.0.1:8000/api/v1/pets/<id>`   
 
 * Rodar testes automáticos (tests.py):   
-`$ python -m manage.py test`
+`$ python -m manage.py test`   
+
+### License   
+[MIT](https://choosealicense.com/licenses/mit/)
