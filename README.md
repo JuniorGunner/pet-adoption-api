@@ -8,7 +8,7 @@ O desenvolvedor deve construir o backend que suporte a operação da ONG.
 
 * Criar virtual enviroment e ativá-lo:   
 `$ python -m venv env`   
-`$ source env/Scripts/activate`   
+`$ source env/bin/activate`   
 
 * Instalar dependências:   
 `$ pip install -r requirements.txt`   
