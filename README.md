@@ -1,37 +1,36 @@
-# Python Developer Test - Backend
+# Pets adoption api - Backend
 
-A ong doghouse precisa de um backend para o seu ecommerce. A ong quer encontrar pessoas que desejam adotar cachorros e gatos e as pessoas precisam visualizar os gatos e os cachorros que estão esperando adoção.
+Basic API to work as backend of a pet adoption organization system.
+Developed with Django and Django Rest Framework.
 
-O desenvolvedor deve construir o backend que suporte a operação da ONG.
+### Instructions
 
-### Instruções   
-
-* Criar virtual enviroment e ativá-lo:   
+* Creat and activate a virtual enviroment:   
 `$ python -m venv env`   
 `$ source env/bin/activate`   
 
-* Instalar dependências:   
+* Install dependencies:
 `$ pip install -r requirements.txt`   
 
-* Criar usuário administrador:   
+* Creat superuser for admin access:   
 `$ cd src`   
 `$ python manage.py createsuperuser --email admin@example.com --username admin`   
 
-* Rodar aplicação:   
+* Run application:
 `$ python -m manage.py runserver`   
 
-### Testar   
+### Tests   
 
-* Para a interface admin, digitar no navegador:   
+* Admin section:   
 `127.0.0.1:8000/admin/`   
 
-* Para a API (lista todos pets - GET, POST):   
+* API(list all pets - GET, POST):   
 `127.0.0.1:8000/api/v1/pets`   
 
-* Ou para listar um pet específico (PUT, DELETE):   
+* List specific pet (PUT, DELETE):   
 `127.0.0.1:8000/api/v1/pets/<id>`   
 
-* Rodar testes automáticos (tests.py):   
+* Run automated tests (tests.py):
 `$ python -m manage.py test`   
 
 ### License   
