@@ -5,14 +5,14 @@ Developed with Django and Django Rest Framework.
 
 ### Instructions
 
-* Creat and activate a virtual enviroment:   
+* Create and activate a virtual enviroment:   
 `$ python -m venv env`   
 `$ source env/bin/activate`   
 
 * Install dependencies:
 `$ pip install -r requirements.txt`   
 
-* Creat superuser for admin access:   
+* Create superuser for admin access:   
 `$ cd src`   
 `$ python manage.py createsuperuser --email admin@example.com --username admin`   
 
