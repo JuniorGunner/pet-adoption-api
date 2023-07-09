@@ -22,24 +22,24 @@ Ensure you have Python 3.x installed on your machine. You can download it [here]
 
 * Create and activate a virtual enviroment:   
 ```
-    $ python -m venv env 
-    $ source env/bin/activate
+$ python -m venv env 
+$ source env/bin/activate
 ```
 
 * Install dependencies:
 ```
-    $ pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 
 * Create superuser for admin access:   
 ```
-   $ cd src
-   $ python manage.py createsuperuser --email admin@example.com --username admin
+$ cd src
+$ python manage.py createsuperuser --email admin@example.com --username admin
 ```
 
 * Run application:
 ```
-    $ python -m manage.py runserver
+$ python -m manage.py runserver
 ```
 
 ### 🧪 Testing
@@ -58,7 +58,7 @@ Ensure you have Python 3.x installed on your machine. You can download it [here]
 
   * Run the automated tests using:
     ```
-        $ python manage.py test
+    $ python manage.py test
     ```
 
 Happy coding! 🐾
