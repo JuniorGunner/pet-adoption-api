@@ -57,9 +57,9 @@ $ python -m manage.py runserver
 3. Automated Tests
 
   * Run the automated tests using:
-    ```
-    $ python manage.py test
-    ```
+  ```
+  $ python manage.py test
+  ```
 
 Happy coding! 🐾
 
